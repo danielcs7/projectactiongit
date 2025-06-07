@@ -1,4 +1,3 @@
----
 respostas:
   quantos_pacientes:
     query: "select count(distinct) as total pacientes from atendimentos"
