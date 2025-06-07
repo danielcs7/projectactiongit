@@ -1,5 +1,6 @@
 ---
 name: Validar arquivos YAML
+
 on:
   push:
     paths:
