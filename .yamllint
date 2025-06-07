@@ -4,4 +4,3 @@ rules:
   document-start:
     present: false
   truthy: disable
-  
