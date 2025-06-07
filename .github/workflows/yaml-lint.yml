@@ -1,0 +1,24 @@
+name: Validar arquivos YAML
+
+on:
+  push:
+    paths:
+      - '**.yml'
+      - '**.yaml'
+
+  pull_request:
+    paths:
+      - '**.yml'
+      - '**.yaml'    
+
+jobs:
+  validate-yaml:
+    name: Verificar sintaxa dos YAMLs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fazer checkout do respositorio
+        uses: actions/checkout@v3
+
+      - name: Validar YAMLs com yamllint
+        uses: ibiqlik/action-yamllint@v3
