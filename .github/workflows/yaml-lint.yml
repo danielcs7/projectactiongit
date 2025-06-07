@@ -22,4 +22,3 @@ jobs:
 
       - name: Validar YAMLs com yamllint
         uses: ibiqlik/action-yamllint@v3
-

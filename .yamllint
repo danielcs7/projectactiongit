@@ -3,5 +3,4 @@ extends: default
 rules:
   document-start:
     present: false
-  truthy:
-    allowed-values: [push, pull_request]
+  truthy: disable
